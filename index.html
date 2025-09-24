@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FusionBazaar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .slider-img {
+            /* width: 100%;  */
+            height: 500px;
+            /* object-fit:fill */
+        }
+
+
+        @media (max-width: 768px) {
+            .slider-img {
+                height: 250px;
+            }
+        }
+
+        body {
+            background-color: #212529;
+            overflow-x: hidden;
+        }
+
+        .bg23 {
+            background-color: #2b3035 !important;
+            color: white;
+        }
+        .text-body-secondary{
+            color: white !important;
+        }
+        nav{
+            background-color: #212529;
+            color: white !important;
+        }
+        .dropdown-item:hover {
+          background-color: #3e454d !important;
+        } 
+        .ft{
+            margin-top: 10rem !important;
+            
+        }
+        .fs{
+            font-size: 45px !important;
+            margin-top: 2rem !important;
+            /* text-decoration: underline; */
+            background-color: #2b3035;
+            padding: 1rem 0;
+            
+        }
+        .bar{
+            font-size: 25px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body- sticky-top">
+        <div class="container-fluid  text-white">
+            <a class="navbar-brand text-white" href="#"><strong>FusionBazaar</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white d-flex justify-content-center align-items-center "><i class="fa-solid fa-bars bar" style="color: #ffffff;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu bg23">
+                            <li><a class="dropdown-item text-white " href="#">Clothing</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Electronics</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-white" href="#">Sofas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1572584642822-6f8de0243c93?q=80&w=870&auto=format&fit=crop"
+                    class="d-block w-100 slider-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-">Weekend Sale</h2>
+                    <p>Get your favourites clothes at 50% OFF</p>
+                    <button class="btn btn-primary me-2">Shirts</button>
+                    <button class="btn btn-secondary me-2">Pants</button>
+                    <button class="btn btn-success me-2">Jackets</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src=" https://images.unsplash.com/photo-1596558450268-9c27524ba856?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100 slider-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-">Mobile Phones</h2>
+                    <p>Get your perfect iPhone at unbeatable prices!</p>
+                    <button class="btn btn-primary me-2">iPhone</button>
+                    <button class="btn btn-secondary me-2">Samsung</button>
+                    <button class="btn btn-success me-2">Realme</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1698936061086-2bf99c7b9fc5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100 slider-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-">Sofas</h2>
+                    <p>Upgrade your living room with stylish and comfortable sofas!</p>
+                    <button class="btn btn-primary me-2">3-Seater</button>
+                    <button class="btn btn-secondary me-2">5-Seater</button>
+                    <button class="btn btn-success me-2">7-Seater</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100 slider-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-">Electronics</h2>
+                    <p>Discover the latest electronics at the best deals!</p>
+                    <button class="btn btn-primary me-2">Keyboards</button>
+                    <button class="btn btn-secondary me-2">Headphones</button>
+                    <button class="btn btn-success me-2">Mouse</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h2 class="text-white text-center my-4 fs">Categories</h2>
+    <main>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 justify-content-center gap-5">
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden w-100 w-md-50">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">Jackets</h2>
+                    <p class="lead">Stay warm and stylish with our trendy jackets!</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto bg23"
+                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src=" https://media.istockphoto.com/id/1293366109/photo/this-one-match-perfect-with-me.jpg?s=1024x1024&w=is&k=20&c=ljpyNgsm90gjZHYRuHWfLXU-PTZk7IERjJW5v3NZ70U="
+                        alt="" height="100%" width="100%" style="border-radius: 21px 21px 0 0;">
+                </div>
+            </div>
+            <div
+                class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden bg23 w-100 w-md-50">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Pants</h2>
+                    <p class="lead">Find your perfect fit with our comfortable pants!</p>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="100%" width="100%" style="border-radius: 21px 21px 0 0;">
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 justify-content-center gap-5">
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden w-100 w-md-50">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">Smart-Watches</h2>
+                    <p class="lead">Upgrade your wrist with the latest smart watches!</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto bg23"
+                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="100%" width="100%" style="border-radius: 21px 21px 0 0;">
+                </div>
+            </div>
+            <div
+                class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden bg23 w-100 w-md-50">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Laptops</h2>
+                    <p class="lead">Power through work and play with our top laptops!</p>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="100%" width="100%" style="border-radius: 21px 21px 0 0;">
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 justify-content-center gap-5">
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden w-100 w-md-50">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">Headphones</h2>
+                    <p class="lead">Experience crystal-clear sound with our premium headphones!</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto bg23"
+                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; ">
+                    <img src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?q=80&w=813&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="100%" width="100%" style="border-radius: 21px 21px 0 0;">
+                </div>
+            </div>
+            <div
+                class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden bg23 w-100 w-md-50">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Mobile Phones</h2>
+                    <p class="lead">Get your perfect mobile phone at unbeatable prices!</p>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src=" https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="100%" width="100%" style="border-radius: 21px 21px 0 0;">
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 justify-content-center gap-5">
+            <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden w-100 w-md-50">
+                <div class="my-3 py-3">
+                    <h2 class="display-5">5-Seater Sofa</h2>
+                    <p class="lead">Relax in style with our spacious 5-seater sofas!</p>
+                </div>
+                <div class="bg-body-tertiary shadow-sm mx-auto bg23"
+                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src=" https://plus.unsplash.com/premium_photo-1674567529895-c89b6bb1b9e6?q=80&w=842&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="100%" width="100%" style="border-radius: 21px 21px 0 0;">
+                </div>
+            </div>
+            <div
+                class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden bg23 w-100 w-md-50">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">&-Seater Sofa</h2>
+                    <p class="lead">Relax in style with our spacious 7-seater sofas!</p>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <img src="https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?q=80&w=809&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="100%" width="100%" style="border-radius: 21px 21px 0 0;">
+                </div>
+            </div>
+        </div>
+    </main>
+     
+    <footer class="py- text-white mx-5 mt-5 ft">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column text-white">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column text-white">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column text-white">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                            class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                            class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                            type="button">Subscribe</button> </div>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2025 FusionBazaar, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi"
+                            width="24" height="24">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24"
+                            height="24" aria-hidden="true">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
